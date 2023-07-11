@@ -5,13 +5,13 @@ import CustomHeaderLink from "./ui/CustomHeaderLink"
 import Button from "./ui/Button"
 import { MessageSquare } from "lucide-react"
 
-interface NavbarProps {
-} 
+interface NavbarProps {} 
 
 
 const Navbar : FC<NavbarProps> = ({}) => {
+ 
     return (
-        <nav className="flex items-center fixed top-0 left-0 w-full justify-between pt-6 pb-6 pl-20 pr-20">
+        <nav className="flex bg-white z-40 sticky top-0 left-0 items-center w-full justify-between pt-6 pb-6 pl-20 pr-20">
             <Link href='/' className="font-bold flex text-xl" >
             D<div className="text-indigo-700 -rotate-30">E</div>
             </Link>
@@ -29,4 +29,4 @@ const Navbar : FC<NavbarProps> = ({}) => {
     )
 }
 
-export default React.memo(Navbar)
+export default Navbar

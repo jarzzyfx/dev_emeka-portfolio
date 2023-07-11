@@ -1,11 +1,17 @@
 "use client"
 
-import { FC } from "react"
+import { FC, useState } from "react"
 import Button from "./ui/Button"
 import { Download, MessageSquare } from "lucide-react"
+import Modal from "./ui/Modal"
 
 
 const Homepage: FC = () => {
+const [modalisOpen, setModalIsOpen]  = useState(false)
+
+  const openModal = () => {
+    setModalIsOpen(true)
+  }
   
   return (
     <div className="flex justify-between w-full h-screen max-h-screen pl-10 pr-10 md:pl-40 md:pr-40 lg:flex-row flex-col">
@@ -19,7 +25,7 @@ const Homepage: FC = () => {
           <h1 className="text-4xl md:text-5xl text-center sm:text-left font-bold">Innovative Solutions for a Digital World while Transforming Ideas into Reality</h1>
           <p className="text-sm sm:text-sm text-center sm:text-left font-semibold opacity-75">As a full-stack web developer, I have the skills and expertise to bring your digital ideas to life. From crafting beautiful user interfaces to building robust back-end systems.</p>
           <div className="flex gap-6">
-            <Button variant='default' className="first-child:hover:text-indigo-700">
+            <Button onClick={openModal} variant='default' className="first-child:hover:text-indigo-700">
               <Download className="text-white  "/>
               <span>Download CV/Resume</span>              
             </Button>
@@ -31,6 +37,7 @@ const Homepage: FC = () => {
           </div>
         </div>
      </section>
+     {modalisOpen ? <Modal /> : null}
     </div>
   )
 }

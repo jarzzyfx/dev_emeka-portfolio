@@ -1,10 +1,8 @@
 "use client"
 import Link from 'next/link'
-import Clientlayout from '../app/ClientLayout'
 
 const About = () => {
     return (
-        <Clientlayout>
             <div className='flex mt-20 flex-col gap-4 w-full'>
                 <section className='flex flex-col w-full p-4'>
                     <h1 className='text-6xl text-center'>Strive To <span className="text-indigo-700">Innovate</span></h1>
@@ -103,7 +101,6 @@ const About = () => {
                     
                 </section>
             </div>
-        </Clientlayout>
     )
 }
 

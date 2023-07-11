@@ -12,16 +12,16 @@ const Footer : FC<FooterProps> = () => {
 <span className="pl-2 w-full flex items-center justify-evenly text-sm font-light">
     Powered by
     <Link href='https://nextjs.org' className="flex p-1 hover:border-gray-400 border-transparent border-2  ">
-    <Image alt="image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" width={50} height={50}/>
+    <Image alt="next image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" width={50} height={50}/>
     </Link>
     <Link href='https://react.dev' className="flex p-1 hover:border-gray-400 border-transparent border-2  ">
-    <Image alt="image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width={50} height={50}/>
+    <Image alt="react image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width={50} height={50}/>
     </Link >
     <Link href='https://tailwindcss.com' className="flex p-1 hover:border-gray-400 border-transparent border-2  ">
-    <Image alt="image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" width={50} height={50}/>
+    <Image alt="tailwind image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" width={50} height={50}/>
     </Link>
     <Link href='https://www.typescriptlang.org/' className="flex p-1 hover:border-gray-400 border-transparent border-2  ">
-    <Image alt="image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width={50} height={50}/>
+    <Image alt="ts image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width={50} height={50}/>
     </Link>
 </span>
         </div>

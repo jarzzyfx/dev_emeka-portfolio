@@ -11,6 +11,7 @@ const buttonVariants = cva(
       variant: {
         default: " bg-indigo-700 hover:border-solid border-2 border-indigo-600 hover:bg-transparent text-white hover:text-indigo-700",
         ghost: "bg-transparent underline  underline-offset-6 text-indigo-700 hover:bg-indigo-700 hover:bg-opacity-10",
+        outlined:"bg-transparent outline outline-[1px] outline-indigo-700 text-indigo"
       },
       size: {
         default: "h-10 py-2 px-4",

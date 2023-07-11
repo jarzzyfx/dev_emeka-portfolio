@@ -1,16 +1,11 @@
 import Homepage from "@/components/Homepage"
-import ClientLayout from './ClientLayout'
 
-const Home = () => {
+const page = () => {
     return (
-        <ClientLayout>
-
-          <div>
+         <div>
            <Homepage/>
-
           </div>
-        </ClientLayout>
     )
 }
 
-export default Home
+export default page
